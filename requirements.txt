@@ -1,0 +1,29 @@
+# Photo Sorter — Python Dependencies
+# Install with: pip install -r requirements.txt
+#
+# Core ML
+open-clip-torch         # CLIP model (community implementation, more pretrained weights)
+torch           # PyTorch — deep learning framework CLIP runs on
+torchvision             # Image transforms for PyTorch
+
+# RAW file handling
+rawpy                   # Python wrapper for LibRaw (reads ARW, CR2, NEF, etc.)
+
+# Image processing
+Pillow                  # Python Imaging Library — image loading, resizing, saving
+opencv-python           # Computer vision — used for Laplacian blur detection
+
+# Perceptual hashing
+ImageHash               # Perceptual hash algorithms (pHash, dHash, etc.)
+
+# EXIF metadata
+piexif                  # Pure Python EXIF reader/writer
+
+# CLI & UI
+rich                    # Beautiful terminal output (progress bars, tables, colors)
+PyYAML                  # YAML config file parsing
+
+# Phase 2+ (uncomment when needed)
+# streamlit             # Web dashboard UI
+# numpy                 # Numerical arrays (already installed as torch dependency)
+# scikit-learn          # For clustering and dimensionality reduction (Phase 3)
