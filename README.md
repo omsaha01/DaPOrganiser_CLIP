@@ -26,7 +26,7 @@ Step 3: Culling
   Kept 2,847 photos | Rejected 465 (blurry: 312, duplicates: 153)
 
 Step 4: Classifying genres
-  Device: cpu | Model: ViT-B-32
+  Device: cpu/GPU | Model: CLIP ViT-B-32
 
 Step 5: Results
 
@@ -64,8 +64,8 @@ sorted/
 🛠️ Setup
 Requirements: Python 3.11+, ~2GB disk space for the CLIP model
 bash# 1. Clone the repo
-git clone https://github.com/yourusername/photo-sorter
-cd photo-sorter
+git clone (https://github.com/omsaha01/DaPOrganiser_CLIP)
+cd DaPOrganiser_CLIP
 
 # 2. Create virtual environment
 python -m venv venv
