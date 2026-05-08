@@ -89,7 +89,7 @@ def run_pipeline(args):
         # ── CRITICAL: Free memory before next batch ───────────────
         # Delete all image objects from this batch
         del loaded, loaded_dict, keeper_photos, classified_batch, org_results
-        gc.collect()  # Force Python to release the memory NOW
+        gc.collect()  # Force Python to release the memory 
 
     # ── Final summary table (after all batches) ───────────────────
     console.print("\n[bold yellow]Final Summary[/bold yellow]")
@@ -122,3 +122,6 @@ def main():
                         help="Photos per batch. Lower = less RAM. Default: 50")
     args = parser.parse_args()
     run_pipeline(args)
+    
+if __name__ == "__main__":
+    main()
